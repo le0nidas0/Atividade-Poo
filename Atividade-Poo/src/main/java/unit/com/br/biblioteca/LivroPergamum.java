@@ -67,19 +67,22 @@ public class LivroPergamum {
     }
 
     public int livrosDisponiveis() {
-
+        return totalExemplares - exemplaresEmprestados;
     }
 
     public String imprimirDadosLivro ( ){
-
+        return "Titulo: " +titulo +"\nAutor: " +autor + "\nISBN: " +isbn + "\nTotal exemplares: " +totalExemplares +"\nExemplares Emprestados: " +exemplaresEmprestados;
     }
 
     public boolean isDisponivel () {
-
+        return livrosDisponiveis() > 0;
     }
 
-    void setDisponivel (boolean isDisponivel) {
-
+    public void setDisponivel (boolean isDisponivel) {
+        if(Disponivel) {
+            exemplaresEmprestados--;
+        }
+        exemplaresEmprestados++;
     }
 
 }

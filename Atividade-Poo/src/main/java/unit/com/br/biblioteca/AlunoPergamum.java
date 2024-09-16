@@ -8,6 +8,14 @@ public class AlunoPergamum {
     private String nomeAluno;
     private ArrayList<Integer> emprestimos;
 
+    public AlunoPergamum(){}
+
+    public void Pergamum(int matricula, String nomeAluno, int totalLivros){
+        this.matricula = matricula;
+        this.nomeAluno = nomeAluno;
+        this.emprestimos = new ArrayList<>(totalLivros);
+    }
+
 
     public ArrayList<Integer> getEmprestimos() {
         return emprestimos;
@@ -34,20 +42,22 @@ public class AlunoPergamum {
     }
 
 
-    boolean emprestarLivro (LivroPergamum livro) {
-        return true;
-    }
-
-    boolean devolverLivro (LivroPergamum livro){
+    public boolean emprestarLivro (LivroPergamum livro) {
+        if (!emprestimos.contains(livro) && livro.isDisponivel()) {
+            emprestimos.add(livro);
+            livro.setExemplaresEmprestados(livro.getExemplaresEmprestados() + 1);
+            return true;
+        }
         return false;
     }
 
-    public AlunoPergamum(){}
-
-    public void Pergamum(int matricula, String nomeAluno, int totalLivros){
-        this.matricula = matricula;
-        this.nomeAluno = nomeAluno;
-        this.emprestimos = new ArrayList<>(totalLivros);
+    boolean devolverLivro (LivroPergamum livro){
+        if (emprestimos.contains(livro)) {
+            emprestimos.remove(livro);
+            livro.setExemplaresEmprestados(livro.getExemplaresEmprestados() - 1);
+            return true;
+        }
+        return false;
     }
 
 
