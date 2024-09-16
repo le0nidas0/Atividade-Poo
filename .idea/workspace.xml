@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="963866c2-cd2b-411b-8e2c-232fca357bcd" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Atividade-Poo/src/main/java/unit/com/br/biblioteca/AlunoPergamum.java" beforeDir="false" afterPath="$PROJECT_DIR$/Atividade-Poo/src/main/java/unit/com/br/biblioteca/AlunoPergamum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Atividade-Poo/src/main/java/unit/com/br/biblioteca/LivroPergamum.java" beforeDir="false" afterPath="$PROJECT_DIR$/Atividade-Poo/src/main/java/unit/com/br/biblioteca/LivroPergamum.java" afterDir="false" />
-    </list>
+    <list default="true" id="963866c2-cd2b-411b-8e2c-232fca357bcd" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
