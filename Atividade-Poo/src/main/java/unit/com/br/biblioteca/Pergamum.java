@@ -55,15 +55,21 @@ public class Pergamum extends AlunoPergamum{
     }
 
     boolean cadastrarAluno(AlunoPergamum aluno){
-        return true;
+        for(AlunoPergamum a : listaAlunos){
+            if (a.getMatricula() == aluno.getMatricula()) {
+                return false;
+            }
+        }
+        listaAlunos.add(aluno);
+        return  true;
     }
 
-    String retirarAluno (int matricula){
+    public String retirarAluno (int matricula){
 
     }
 
-    boolean cadastrarLivro (LivroPergamum livro){
-
+    public boolean cadastrarLivro (LivroPergamum livro){
+        for(AlunoP)
     }
 
     LivroPergamum retirarLivro (int codigo){
