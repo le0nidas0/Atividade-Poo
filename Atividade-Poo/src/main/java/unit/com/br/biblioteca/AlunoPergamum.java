@@ -6,22 +6,22 @@ public class AlunoPergamum {
 
     private int matricula;
     private String nomeAluno;
-    private ArrayList<Integer> emprestimos;
+    private ArrayList<LivroPergamum> emprestimos;
 
     public AlunoPergamum(){}
 
-    public void Pergamum(int matricula, String nomeAluno, int totalLivros){
+    public  AlunoPergamum(int matricula, String nomeAluno, int totalLivros){
         this.matricula = matricula;
         this.nomeAluno = nomeAluno;
-        this.emprestimos = new ArrayList<>(totalLivros);
+        this.emprestimos = new ArrayList<LivroPergamum>(totalLivros);
     }
 
 
-    public ArrayList<Integer> getEmprestimos() {
+    public ArrayList<LivroPergamum> getEmprestimos() {
         return emprestimos;
     }
 
-    public void setEmprestimos(ArrayList<Integer> emprestimos) {
+    public void setEmprestimos(ArrayList<LivroPergamum> emprestimos) {
         this.emprestimos = emprestimos;
     }
 

@@ -79,7 +79,7 @@ public class LivroPergamum {
     }
 
     public void setDisponivel (boolean isDisponivel) {
-        if(Disponivel) {
+        if(isDisponivel) {
             exemplaresEmprestados--;
         }
         exemplaresEmprestados++;

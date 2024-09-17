@@ -65,20 +65,35 @@ public class Pergamum extends AlunoPergamum{
     }
 
     public String retirarAluno (int matricula){
-
+        for(AlunoPergamum aluno: listaAlunos) {
+            if (aluno.getMatricula() == matricula){
+                listaAlunos.remove(aluno);
+                return  aluno.getNomeAluno();
+            }
+        }
+        return  null;
     }
 
     public boolean cadastrarLivro (LivroPergamum livro){
-        for(AlunoP)
+        listaLivros.add(livro);
+        return true;
     }
 
-    LivroPergamum retirarLivro (int codigo){
-
+    public LivroPergamum retirarLivro (int codigo){
+        for(LivroPergamum livro: listaLivros) {
+            if (livro.getCodigo() == codigo) {
+                listaLivros.remove(livro);
+                return livro;
+            }
+        }
+        return null;
     }
-
-    LivroPergamum buscarLivro (int codigo){
-
+    public  LivroPergamum buscarLicro (int codigo) {
+        for(LivroPergamum livro : listaLivros) {
+            if (livro.getCodigo() == codigo) {
+                return livro;
+            }
+        }
+        return null;
     }
-
-
-}
+    }
