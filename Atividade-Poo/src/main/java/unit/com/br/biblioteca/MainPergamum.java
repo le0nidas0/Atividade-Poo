@@ -23,7 +23,7 @@ public class MainPergamum {
 
         aluno1.emprestarLivro(livro2);
 
-        LivroPergamum livroBuscado = biblioteca.buscarLivro(2);
+        LivroPergamum livroBuscado = pergamum.buscarLivro(2);
         if (livroBuscado != null) {
             System.out.println("Livro encontrado: " + livroBuscado.getTitulo());
         }
@@ -31,7 +31,7 @@ public class MainPergamum {
             System.out.println("Livro não encontrado.");
         }
 
-        LivroPergamum livroRetirado = biblioteca.retirarLivro(1);
+        LivroPergamum livroRetirado = pergamum.retirarLivro(1);
 
 
         System.out.println(livro2.imprimirDadosLivro());

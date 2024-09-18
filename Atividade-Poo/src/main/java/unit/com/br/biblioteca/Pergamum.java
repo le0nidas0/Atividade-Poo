@@ -88,7 +88,7 @@ public class Pergamum extends AlunoPergamum{
         }
         return null;
     }
-    public  LivroPergamum buscarLicro (int codigo) {
+    public  LivroPergamum buscarLivro (int codigo) {
         for(LivroPergamum livro : listaLivros) {
             if (livro.getCodigo() == codigo) {
                 return livro;
