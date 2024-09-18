@@ -1,6 +1,5 @@
 package unit.com.br.biblioteca;
-
-import java.sql.SQLOutput;
+import java.util.ArrayList;
 
 public class MainPergamum {
     public static void main(String[] args) {
@@ -23,6 +22,17 @@ public class MainPergamum {
         pergamum.cadastrarAluno(aluno3);
 
         aluno1.emprestarLivro(livro2);
+
+        LivroPergamum livroBuscado = biblioteca.buscarLivro(2);
+        if (livroBuscado != null) {
+            System.out.println("Livro encontrado: " + livroBuscado.getTitulo());
+        }
+        else {
+            System.out.println("Livro não encontrado.");
+        }
+
+        LivroPergamum livroRetirado = biblioteca.retirarLivro(1);
+
 
         System.out.println(livro2.imprimirDadosLivro());
 
